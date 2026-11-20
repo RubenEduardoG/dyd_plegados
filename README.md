@@ -12,7 +12,16 @@ main.js                        Menú móvil, render de fabricaciones y galería,
 assets/hero-industrial.png     Foto del hero elegida por el cliente (no renombrar ni cambiar la ruta)
 assets/trabajos/               Fotos de trabajos reales para la galería
 assets/fonts/                  Archivo Black e Inter alojadas en el sitio (licencia SIL OFL)
+_headers                       Encabezados de seguridad para Cloudflare Pages (producción)
+vercel.json                    Los mismos encabezados para Vercel (demos)
 ```
+
+## Seguridad
+
+- Sitio estático: sin servidor propio, base de datos ni plugins.
+- `_headers` / `vercel.json`: Content-Security-Policy (solo recursos propios), bloqueo de iframes, nosniff, HSTS, Referrer-Policy y Permissions-Policy.
+- Al instalar el panel (Decap CMS en `/admin`) hay que ampliar la CSP solo para esa ruta, porque carga scripts externos.
+- Cuentas: verificación en dos pasos en GitHub, Cloudflare y el correo de DYD; accesos personales, sin contraseñas compartidas; secretos del login del panel solo como variables de entorno.
 
 ## Probar localmente
 
