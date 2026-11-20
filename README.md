@@ -49,7 +49,7 @@ Abrir http://localhost:8000. También funciona abriendo `index.html` directament
 | Navegación, menú móvil, anclas | Funciona |
 | Botones "Consultar" / flotante → WhatsApp con mensaje prearmado | Funciona, con el número oficial de DYD |
 | Formulario: validación + armado del mensaje + abrir WhatsApp + copiar | Funciona. **No envía nada por sí mismo**: el cliente debe tocar Enviar en WhatsApp |
-| Galería con ampliación | Funciona (1 foto real; resto pendientes) |
+| Galería con ampliación | Funciona, 10 fotos reales de trabajos de DYD |
 | Precios | Se editan en `config.js` (requiere commit). No hay panel de administración |
 | Checkout, pagos, facturación | Fuera de alcance |
 
@@ -71,8 +71,8 @@ Decisión pendiente con el cliente: si el panel entra en la primera entrega.
 
 - Correo de contacto.
 - Logo original (PNG/SVG); hoy se usa logotipo tipográfico.
-- Fotos en alta resolución: puertas terminadas/apiladas, plegadora/operarios, piezas y ejes, puertas instaladas, máquinas y chapas.
-- Materiales trabajados y espesores por proceso.
+- Fotos originales en alta resolución (las actuales salen de capturas de Instagram, ~600 px de origen) y fotos de plegadora/operarios.
+- Espesores por proceso (materiales confirmados en Instagram: hierro y acero inoxidable).
 - Productos/trabajos a mostrar y precios vigentes (o "Consultar").
 - Dominio y titularidad de las cuentas (GitHub, Vercel, dominio).
 - Política de privacidad: el formulario no guarda datos (arma un mensaje de WhatsApp), revisar si se agregan otros canales.

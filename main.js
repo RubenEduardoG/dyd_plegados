@@ -90,11 +90,12 @@
   var gallery = document.getElementById("gallery");
   if (gallery && Array.isArray(cfg.galeria)) {
     gallery.innerHTML = cfg.galeria.map(function (g, i) {
+      var cls = "g-item" + (g.forma ? " g-" + g.forma : "");
       if (!g.src) {
-        return '<figure class="g-item g-ph"><div class="ph"><span>FOTO PENDIENTE</span></div><figcaption>' + esc(g.titulo) + '</figcaption></figure>';
+        return '<figure class="' + cls + ' g-ph"><div class="ph"><span>FOTO PENDIENTE</span></div><figcaption>' + esc(g.titulo) + '</figcaption></figure>';
       }
       var dims = g.ancho && g.alto ? ' width="' + g.ancho + '" height="' + g.alto + '"' : "";
-      return '<figure class="g-item"><button type="button" class="g-open" data-i="' + i + '" aria-label="Ampliar foto: ' + esc(g.titulo) + '">' +
+      return '<figure class="' + cls + '"><button type="button" class="g-open" data-i="' + i + '" aria-label="Ampliar foto: ' + esc(g.titulo) + '">' +
         '<img src="' + esc(g.src) + '" alt="' + esc(g.titulo) + '" loading="lazy" decoding="async"' + dims + '></button>' +
         '<figcaption>' + esc(g.titulo) + '</figcaption></figure>';
     }).join("");
