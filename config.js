@@ -27,7 +27,7 @@ window.DYD_CONFIG = {
     {
       nombre: "Puertas metálicas",
       descripcion: "Puertas fabricadas en nuestro taller. Contanos medidas y uso para cotizar.",
-      imagen: "assets/trabajos/puerta-metalica.webp",
+      imagen: "assets/trabajos/puertas-dobles.webp",
       precio: null,
       disponible: true
     },
@@ -62,14 +62,16 @@ window.DYD_CONFIG = {
   ],
 
   // Galería de trabajos reales (fotos del Instagram de DYD). src: null => espacio "Foto pendiente".
-  // forma: "grande" (2x2), "alto" (vertical, 2 filas) o vacío (normal).
+  // forma: "grande" (2x2), "alto" (2 filas), "ancho" (2 columnas) o vacío (normal).
+  // Para que la grilla cierre sin huecos: celdas totales múltiplo de 6 (grande=4, alto=2, ancho=2, normal=1).
   galeria: [
     { src: "assets/trabajos/parrilla-estructura.webp", titulo: "Parrilla y estructura metálica", forma: "grande", ancho: 900, alto: 506 },
     { src: "assets/trabajos/escalera-caracol.webp", titulo: "Escalera caracol", forma: "alto", ancho: 640, alto: 967 },
+    { src: "assets/trabajos/puertas-dobles.webp", titulo: "Puertas dobles terminadas", forma: "alto", ancho: 574, alto: 773 },
     { src: "assets/trabajos/puerta-metalica.webp", titulo: "Puertas metálicas", forma: "alto", ancho: 700, alto: 982 },
     { src: "assets/trabajos/perfiles-plegados.webp", titulo: "Perfiles plegados", ancho: 865, alto: 947 },
     { src: "assets/trabajos/escalones-chapa-semillada.webp", titulo: "Escalones de chapa semillada", ancho: 850, alto: 953 },
-    { src: "assets/trabajos/modulos-chapa-plegada.webp", titulo: "Módulos de chapa plegada", ancho: 900, alto: 513 },
+    { src: "assets/trabajos/modulos-chapa-plegada.webp", titulo: "Módulos de chapa plegada", forma: "ancho", ancho: 900, alto: 513 },
     { src: "assets/trabajos/pieza-plegada-taller.webp", titulo: "Pieza plegada en el taller", ancho: 900, alto: 952 },
     { src: "assets/trabajos/perfil-varios-pliegues.webp", titulo: "Perfil con varios pliegues", ancho: 895, alto: 985 },
     { src: "assets/trabajos/chapa-plegada-acanalada.webp", titulo: "Chapa plegada acanalada", ancho: 900, alto: 924 },

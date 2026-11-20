@@ -169,6 +169,7 @@ em { font-style: normal; color: var(--lime); }
 .g-item { margin: 0; position: relative; overflow: hidden; background: var(--graphite); }
 .g-grande { grid-column: span 2; grid-row: span 2; }
 .g-alto { grid-row: span 2; }
+.g-ancho { grid-column: span 2; }
 .g-open { display: block; width: 100%; height: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; }
 .g-item img { width: 100%; height: 100%; object-fit: cover; object-position: 60% 55%; transition: transform .6s; }
 .g-item:hover img { transform: scale(1.04); }
