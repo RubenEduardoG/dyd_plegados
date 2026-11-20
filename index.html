@@ -17,6 +17,15 @@
   <link rel="stylesheet" href="style.css">
   <script src="config.js" defer></script>
   <script src="main.js" defer></script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"¿Qué necesito para pedir un presupuesto?","acceptedAnswer":{"@type":"Answer","text":"Contanos qué querés hacer, con medidas, material, espesor y cantidad. Si tenés un plano, un croquis o una foto, mandalo por WhatsApp."}},
+    {"@type":"Question","name":"¿Trabajan con particulares?","acceptedAnswer":{"@type":"Answer","text":"Sí. Hacemos trabajos para particulares y para empresas."}},
+    {"@type":"Question","name":"¿Qué espesores de chapa trabajan?","acceptedAnswer":{"@type":"Answer","text":"De 0,5 a 6,35 mm."}},
+    {"@type":"Question","name":"¿Hacen trabajos a medida?","acceptedAnswer":{"@type":"Answer","text":"Sí. Fabricamos piezas, productos terminados y desarrollos especiales a partir de un plano, una muestra o una idea."}},
+    {"@type":"Question","name":"¿Dónde están?","acceptedAnswer":{"@type":"Answer","text":"En José León Suárez, provincia de Buenos Aires."}}
+  ]}
+  </script>
 </head>
 <body>
   <a class="skip" href="#contenido">Saltar al contenido</a>
@@ -49,6 +58,11 @@
           <a class="btn btn-lime" href="#servicios">CONOCER SERVICIOS <span aria-hidden="true">→</span></a>
           <a class="btn btn-ghost" href="#presupuesto">PEDIR PRESUPUESTO</a>
         </div>
+        <ul class="hero-points">
+          <li>Particulares y empresas</li>
+          <li>Presupuesto por WhatsApp</li>
+          <li>Trabajos a medida</li>
+        </ul>
       </div>
       <p class="hero-spec"><b>0,5 — 6,35 mm</b><span>ESPESORES DE CHAPA</span></p>
     </section>
@@ -73,6 +87,7 @@
           <li><b>4</b><span>procesos de chapa</span></li>
           <li><b>0,5–6,35</b><span>mm de espesor</span></li>
           <li><b>A medida</b><span>piezas y productos</span></li>
+          <li><b>Directo</b><span>con el taller, por WhatsApp</span></li>
         </ul>
       </div>
     </section>
@@ -113,10 +128,33 @@
       <p class="services-note">Trabajamos chapas de <b>0,5 a 6,35 mm</b> de espesor. Consultanos por el material y el espesor de tu trabajo.</p>
     </section>
 
+    <!-- PARA QUIÉN -->
+    <section class="section audience" aria-labelledby="aud-title">
+      <div class="section-head">
+        <p class="eyebrow">03 / PARA QUIÉN</p>
+        <h2 id="aud-title">TU TRABAJO, <em>A MEDIDA.</em></h2>
+        <p>Atendemos tanto pedidos particulares como trabajos para empresas. Elegí tu caso y escribinos con la consulta ya armada.</p>
+      </div>
+      <div class="aud-grid">
+        <article class="aud-card">
+          <p class="aud-tag">PARTICULARES</p>
+          <h3>Para tu casa o tu proyecto</h3>
+          <p>¿Necesitás una puerta, una parrilla, una estructura o una pieza especial? Contanos la idea y las medidas, y te pasamos presupuesto.</p>
+          <a class="btn btn-lime" href="#presupuesto" data-wa="Hola DYD Plegados, soy particular y quiero pedir un presupuesto para:">CONSULTAR COMO PARTICULAR <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="aud-card">
+          <p class="aud-tag">EMPRESAS Y TALLERES</p>
+          <h3>Para tu producción</h3>
+          <p>Corte, plegado, cilindrado y punzonado de chapa según tu plano, y fabricación de piezas y desarrollos especiales.</p>
+          <a class="btn btn-lime" href="#presupuesto" data-wa="Hola DYD Plegados, les escribo por un trabajo para mi empresa:">CONSULTAR COMO EMPRESA <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </section>
+
     <!-- 4. FABRICACIONES A MEDIDA -->
     <section id="fabricaciones" class="section fab" aria-labelledby="fab-title">
       <div class="fab-copy">
-        <p class="eyebrow">03 / FABRICACIÓN A MEDIDA</p>
+        <p class="eyebrow">04 / FABRICACIÓN A MEDIDA</p>
         <h2 id="fab-title">PIEZAS, PRODUCTOS Y <em>DESARROLLOS.</em></h2>
         <p>Además de los servicios de chapa, fabricamos productos terminados y piezas a partir de un plano, una muestra o una idea. Contanos qué necesitás y lo evaluamos juntos.</p>
         <a class="btn btn-lime" href="#presupuesto">CONTANOS TU PROYECTO <span aria-hidden="true">→</span></a>
@@ -124,19 +162,6 @@
       <div class="fab-grid" id="fab-grid">
         <noscript><p class="muted">Puertas metálicas · Parrillas y estructuras · Piezas y ejes · Desarrollos especiales. Precios: consultar.</p></noscript>
       </div>
-    </section>
-
-    <!-- PROCESO -->
-    <section class="section steps" aria-labelledby="steps-title">
-      <div class="section-head">
-        <p class="eyebrow">04 / CÓMO TRABAJAMOS</p>
-        <h2 id="steps-title">PEDIR PRESUPUESTO <br class="br-desk">ES <em>SIMPLE.</em></h2>
-      </div>
-      <ol class="steps-list">
-        <li><b>01</b><h3>Contanos qué necesitás</h3><p>Completá el formulario o escribinos directo por WhatsApp.</p></li>
-        <li><b>02</b><h3>Enviá medidas o referencias</h3><p>Plano, croquis, foto o muestra: lo que tengas sirve para empezar.</p></li>
-        <li><b>03</b><h3>Cotizamos y coordinamos</h3><p>Te respondemos por WhatsApp con la cotización y coordinamos el trabajo.</p></li>
-      </ol>
     </section>
 
     <!-- 5. TRABAJOS REALIZADOS -->
@@ -151,10 +176,53 @@
       <div class="gallery" id="gallery"></div>
     </section>
 
+    <!-- PROCESO -->
+    <section class="section steps" aria-labelledby="steps-title">
+      <div class="section-head">
+        <p class="eyebrow">06 / CÓMO TRABAJAMOS</p>
+        <h2 id="steps-title">PEDIR PRESUPUESTO <br class="br-desk">ES <em>SIMPLE.</em></h2>
+      </div>
+      <ol class="steps-list">
+        <li><b>01</b><h3>Contanos qué necesitás</h3><p>Completá el formulario o escribinos directo por WhatsApp.</p></li>
+        <li><b>02</b><h3>Enviá medidas o referencias</h3><p>Plano, croquis, foto o muestra: lo que tengas sirve para empezar.</p></li>
+        <li><b>03</b><h3>Cotizamos y coordinamos</h3><p>Te respondemos por WhatsApp con la cotización y coordinamos el trabajo.</p></li>
+      </ol>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES -->
+    <section id="preguntas" class="section faq" aria-labelledby="faq-title">
+      <div class="section-head">
+        <p class="eyebrow">07 / PREGUNTAS FRECUENTES</p>
+        <h2 id="faq-title">ANTES DE <em>CONSULTAR.</em></h2>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>¿Qué necesito para pedir un presupuesto?</summary>
+          <p>Contanos qué querés hacer, con medidas, material, espesor y cantidad. Si tenés un plano, un croquis o una foto, mandalo por WhatsApp: lo que tengas sirve para empezar.</p>
+        </details>
+        <details>
+          <summary>¿Trabajan con particulares?</summary>
+          <p>Sí. Hacemos trabajos para particulares y para empresas.</p>
+        </details>
+        <details>
+          <summary>¿Qué espesores de chapa trabajan?</summary>
+          <p>De 0,5 a 6,35 mm. Consultanos por el material y el espesor de tu trabajo.</p>
+        </details>
+        <details>
+          <summary>¿Hacen trabajos a medida?</summary>
+          <p>Sí. Además de los servicios de chapa, fabricamos piezas, productos terminados y desarrollos especiales a partir de un plano, una muestra o una idea.</p>
+        </details>
+        <details>
+          <summary>¿Dónde están?</summary>
+          <p>En José León Suárez, provincia de Buenos Aires. Coordinamos cada trabajo por WhatsApp.</p>
+        </details>
+      </div>
+    </section>
+
     <!-- 6. PRESUPUESTO / CONTACTO -->
     <section id="presupuesto" class="section quote" aria-labelledby="quote-title">
       <div class="quote-copy">
-        <p class="eyebrow">06 / PRESUPUESTO</p>
+        <p class="eyebrow">08 / PRESUPUESTO</p>
         <h2 id="quote-title">¿TENÉS UN PLANO <br class="br-desk">O UNA <em>IDEA?</em></h2>
         <p>Completá estos datos y armamos tu consulta para enviarla por WhatsApp. Vas a poder revisarla antes de mandarla.</p>
         <p class="muted small">Si tenés planos, fotos o croquis, adjuntalos en el mismo chat de WhatsApp.</p>
