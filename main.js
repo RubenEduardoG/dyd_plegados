@@ -127,7 +127,23 @@
     if (hasNumber) items.push('<a href="' + waUrl("Hola DYD Plegados, quiero hacer una consulta.") + '" target="_blank" rel="noopener">WhatsApp</a>');
     if (cfg.telefono) items.push('<a href="tel:' + esc(String(cfg.telefono).replace(/[^\d+]/g, "")) + '">' + esc(cfg.telefono) + "</a>");
     if (cfg.email) items.push('<a href="mailto:' + esc(cfg.email) + '">' + esc(cfg.email) + "</a>");
+    if (cfg.mapa) items.push('<a href="' + esc(cfg.mapa) + '" target="_blank" rel="noopener">Cómo llegar ↗</a>');
     fc.innerHTML = items.map(function (x) { return "<li>" + x + "</li>"; }).join("");
+  }
+
+  /* ---------- Datos de contacto en la sección Presupuesto ---------- */
+  var ci = document.getElementById("contact-info");
+  if (ci) {
+    var rows = [];
+    if (cfg.direccion || cfg.localidad) {
+      rows.push("<dt>Taller</dt><dd>" + esc([cfg.direccion, cfg.localidad].filter(Boolean).join(", ")) +
+        (cfg.mapa ? '<br><a href="' + esc(cfg.mapa) + '" target="_blank" rel="noopener">Cómo llegar ↗</a>' : "") + "</dd>");
+    }
+    if (cfg.horarios) rows.push("<dt>Horario</dt><dd>" + esc(cfg.horarios) + "</dd>");
+    if (cfg.telefono) rows.push('<dt>WhatsApp y teléfono</dt><dd><a href="tel:' + esc(String(cfg.telefono).replace(/[^\d+]/g, "")) + '">' + esc(cfg.telefono) + "</a></dd>");
+    if (cfg.email) rows.push('<dt>Correo</dt><dd><a href="mailto:' + esc(cfg.email) + '">' + esc(cfg.email) + "</a></dd>");
+    ci.innerHTML = rows.join("");
+    ci.hidden = !rows.length;
   }
   if (cfg.instagram) {
     var ig = "https://www.instagram.com/" + encodeURIComponent(cfg.instagram) + "/";

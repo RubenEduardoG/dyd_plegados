@@ -8,18 +8,18 @@
 window.DYD_CONFIG = {
   // WhatsApp oficial en formato internacional, solo números, sin "+", espacios ni guiones.
   // Ejemplo de formato (NO es el número real): "5491100000000"
-  // PENDIENTE: mientras esté vacío, WhatsApp se abre con el mensaje listo y pide elegir el contacto.
-  whatsapp: "",
+  // Confirmado por el cliente (ficha de Google de DYD: +54 11 6665-3155).
+  whatsapp: "5491166653155",
 
   instagram: "dyd.plegados",
 
-  // PENDIENTES — se muestran en el footer solo cuando tengan valor confirmado.
-  telefono: "",
-  email: "",
-  direccion: "", // A. Sáenz 1910 figura en una publicación: confirmar vigencia y autorización antes de cargarla.
-  horarios: "",
-
+  // Datos de contacto. Lo que esté vacío no se muestra.
+  telefono: "+54 11 6665-3155",
+  email: "", // PENDIENTE
+  direccion: "Antonio Sáenz 1910",
+  horarios: "Lunes a viernes de 8 a 17 h",
   localidad: "José León Suárez, Buenos Aires",
+  mapa: "https://www.google.com/maps/place/?q=place_id:ChIJWXb_h2C7vJURH6e3MuaT9MI",
 
   // Fabricaciones y productos. precio: null => se muestra "Consultar".
   // precio admite texto libre, ej.: "Desde $ 000.000" (cargar solo precios confirmados y vigentes).

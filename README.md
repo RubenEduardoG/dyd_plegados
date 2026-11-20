@@ -36,7 +36,8 @@ Abrir http://localhost:8000. También funciona abriendo `index.html` directament
 
 ## Configurar datos (config.js)
 
-- `whatsapp`: número oficial en formato internacional, solo dígitos (ej. de formato: `549` + característica + número). **Pendiente.** Mientras esté vacío, los botones abren WhatsApp con el mensaje armado y piden elegir el contacto.
+- `whatsapp`: número oficial en formato internacional, solo dígitos. Cargado: `5491166653155` (+54 11 6665-3155, confirmado por el cliente).
+- `mapa`: enlace "Cómo llegar" a la ficha de Google Maps de DYD.
 - `telefono`, `email`, `direccion`, `horarios`: se muestran en el footer solo si tienen valor.
 - `fabricaciones`: nombre, descripción, imagen, `precio` (`null` = "Consultar") y `disponible`.
 - `galeria`: `src: null` muestra un espacio "Foto pendiente". Subir fotos a `assets/trabajos/` (~1200 px de ancho, .webp o .jpg).
@@ -46,7 +47,7 @@ Abrir http://localhost:8000. También funciona abriendo `index.html` directament
 | Función | Estado |
 |---|---|
 | Navegación, menú móvil, anclas | Funciona |
-| Botones "Consultar" / flotante → WhatsApp con mensaje prearmado | Funciona (falta número oficial) |
+| Botones "Consultar" / flotante → WhatsApp con mensaje prearmado | Funciona, con el número oficial de DYD |
 | Formulario: validación + armado del mensaje + abrir WhatsApp + copiar | Funciona. **No envía nada por sí mismo**: el cliente debe tocar Enviar en WhatsApp |
 | Galería con ampliación | Funciona (1 foto real; resto pendientes) |
 | Precios | Se editan en `config.js` (requiere commit). No hay panel de administración |
@@ -68,9 +69,7 @@ Decisión pendiente con el cliente: si el panel entra en la primera entrega.
 
 ## Datos pendientes del cliente
 
-- Número oficial de WhatsApp, teléfono y correo.
-- Dirección vigente y autorización para publicarla (A. Sáenz 1910 figura en una publicación, sin confirmar).
-- Horarios.
+- Correo de contacto.
 - Logo original (PNG/SVG); hoy se usa logotipo tipográfico.
 - Fotos en alta resolución: puertas terminadas/apiladas, plegadora/operarios, piezas y ejes, puertas instaladas, máquinas y chapas.
 - Materiales trabajados y espesores por proceso.

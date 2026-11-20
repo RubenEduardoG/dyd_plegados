@@ -203,6 +203,14 @@ em { font-style: normal; color: var(--lime); }
 .faq-list summary:hover { color: var(--lime); }
 .faq-list details p { color: var(--muted); padding: 0 52px 24px 0; max-width: 720px; }
 
+/* Datos de contacto */
+.contact-info { margin: 36px 0 0; padding-top: 24px; border-top: 1px solid var(--line); display: grid; grid-template-columns: auto 1fr; gap: 12px 20px; font-size: 15px; max-width: 460px; }
+.contact-info dt { font-size: 11px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--lime); padding-top: 3px; }
+.contact-info dd { margin: 0; color: #e4e7e3; }
+.contact-info a { text-decoration: underline; text-decoration-color: #d7ef2e80; text-underline-offset: 3px; }
+.contact-info a:hover { color: var(--lime); }
+@media (max-width: 420px) { .contact-info { grid-template-columns: 1fr; gap: 4px; } .contact-info dd { margin-bottom: 12px; } }
+
 /* Presupuesto */
 .quote { background: var(--graphite); display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(40px, 7vw, 110px); border-top: 1px solid var(--line); }
 .quote-copy p:not(.eyebrow) { color: var(--muted); font-size: 17px; margin-top: 22px; max-width: 460px; }
