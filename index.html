@@ -1,11 +1,238 @@
-<!doctype html><html lang='es'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>DYD Plegados | Demo</title><link rel='stylesheet' href='style.css'></head><body>
-<header><a class='logo' href='#'><b>DYD</b><span>PLEGADOS</span></a><nav><a href='#empresa'>Empresa</a><a href='#servicios'>Servicios</a><a href='#productos'>Productos</a><a href='#medida'>A medida</a><a href='#contacto'>Contacto</a></nav><a class='quote' href='#medida'>PEDIR PRESUPUESTO</a></header>
-<main><section class='hero'><div class='shade'></div><div class='heroText'><small>METALÚRGICA · BUENOS AIRES</small><h1>CORTES, PLEGADOS<br>Y SOLUCIONES<br><i>A MEDIDA.</i></h1><p>Corte, plegado, cilindrado y punzonado de chapas. Fabricamos piezas, productos terminados y desarrollos especiales.</p><div class='actions'><a href='#servicios'>CONOCER SERVICIOS →</a><a class='ghost' href='#medida'>PEDIR PRESUPUESTO</a></div></div><div class='spec'><b>0,5 — 6,35 mm</b><span>ESPESORES DE CHAPA</span></div></section>
-<section class='ticker'><span>CORTE</span><b>•</b><span>PLEGADO</span><b>•</b><span>CILINDRADO</span><b>•</b><span>PUNZONADO</span><b>•</b><span>TRABAJOS A MEDIDA</span></section>
-<section id='empresa' class='intro'><div><small>01 / NOSOTROS</small><h2>METALÚRGICA CON<br>OFICIO Y <i>PRECISIÓN.</i></h2></div><div><p>En DYD Plegados trabajamos chapa para transformar una necesidad en una pieza concreta. Atendemos trabajos unitarios, series y desarrollos especiales.</p><div class='facts'><b>FABRICACIÓN PROPIA</b><b>TRABAJOS A MEDIDA</b><b>ATENCIÓN DIRECTA</b></div></div></section>
-<section id='servicios' class='services'><div class='head'><small>02 / CAPACIDADES</small><h2>QUÉ HACEMOS</h2></div><div class='cards'>
-<article><em>01</em><h3>CORTE</h3><p>Corte de chapa para piezas y desarrollos según medidas.</p><span>Ver servicio →</span></article><article><em>02</em><h3>PLEGADO</h3><p>Plegados precisos para perfiles, bandejas, gabinetes y piezas especiales.</p><span>Ver servicio →</span></article><article><em>03</em><h3>CILINDRADO</h3><p>Curvado y conformado de chapa para desarrollos cilíndricos.</p><span>Ver servicio →</span></article><article><em>04</em><h3>PUNZONADO</h3><p>Perforaciones y mecanizados repetitivos sobre chapa.</p><span>Ver servicio →</span></article></div></section>
-<section id='productos' class='products'><div class='copy'><small>03 / PRODUCTOS</small><h2>PIEZAS LISTAS<br>PARA <i>TRABAJAR.</i></h2><p>Esta área será el catálogo real de DYD: productos, medidas, espesores, stock, precio y compra online.</p><a href='#'>VER CATÁLOGO DEMO →</a></div><div class='productGrid'><div><b>PERFILES PLEGADOS</b><span>Varias medidas</span></div><div><b>BANDEJAS Y CAJONES</b><span>Estándar / a medida</span></div><div><b>PIEZAS ESPECIALES</b><span>Según plano</span></div><div><b>CHAPA DECORATIVA</b><span>Próximamente</span></div></div></section>
-<section id='medida' class='custom'><div><small>04 / PROYECTOS ESPECIALES</small><h2>¿TENÉS UN PLANO<br>O UNA <i>IDEA?</i></h2><p>Mandanos medidas, cantidad y una referencia. Preparamos la cotización del trabajo.</p></div><form><div><input placeholder='Nombre / Empresa'><input placeholder='WhatsApp'></div><div><input placeholder='Email'><input placeholder='Cantidad'></div><textarea placeholder='Contanos qué necesitás, medidas, material y espesor...'></textarea><button type='button'>SOLICITAR COTIZACIÓN →</button></form></section>
-</main><footer id='contacto'><div class='logo foot'><b>DYD</b><span>PLEGADOS</span></div><p>Corte · Plegado · Cilindrado · Punzonado</p><p>Buenos Aires, Argentina<br>WhatsApp y email comercial</p><p>Instagram: @dyd.plegados</p></footer>
-</body></html>
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DYD Plegados | Corte, plegado, cilindrado y punzonado de chapas</title>
+  <meta name="description" content="DYD Plegados, metalúrgica en José León Suárez, Buenos Aires. Corte, plegado, cilindrado y punzonado de chapas. Fabricamos piezas, productos terminados y desarrollos especiales.">
+  <meta name="theme-color" content="#0c0f0f">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:title" content="DYD Plegados | Cortes, plegados y soluciones a medida">
+  <meta property="og:description" content="Corte, plegado, cilindrado y punzonado de chapas. Fabricamos piezas, productos terminados y desarrollos especiales.">
+  <meta property="og:image" content="assets/trabajos/parrilla-estructura.webp">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230c0f0f'/%3E%3Cpath d='M14 44h36' stroke='%23d7ef2e' stroke-width='6'/%3E%3Ctext x='32' y='38' font-family='Arial Black,Arial' font-weight='900' font-size='22' fill='%23fff' text-anchor='middle'%3EDYD%3C/text%3E%3C/svg%3E">
+  <link rel="preload" href="assets/fonts/archivo-black.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/hero-industrial.png" as="image">
+  <link rel="stylesheet" href="style.css">
+  <script src="config.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <a class="logo" href="#inicio" aria-label="DYD Plegados, ir al inicio"><b>DYD</b><span>PLEGADOS</span></a>
+    <nav id="menu" class="nav" aria-label="Principal">
+      <a href="#empresa">Empresa</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#fabricaciones">A medida</a>
+      <a href="#trabajos">Trabajos</a>
+      <a href="#presupuesto">Contacto</a>
+    </nav>
+    <a class="btn btn-lime header-cta" href="#presupuesto"><span class="hide-sm">PEDIR&nbsp;</span>PRESUPUESTO</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main id="contenido">
+    <!-- 1. INICIO -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-media" role="img" aria-label="Parrilla y estructura metálica en el taller de DYD Plegados"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow">METALÚRGICA · BUENOS AIRES</p>
+        <h1 id="hero-title">CORTES, PLEGADOS <br class="br-desk">Y SOLUCIONES <br><em>A MEDIDA.</em></h1>
+        <p class="hero-lead">Corte, plegado, cilindrado y punzonado de chapas. Fabricamos piezas, productos terminados y desarrollos especiales.</p>
+        <div class="actions">
+          <a class="btn btn-lime" href="#servicios">CONOCER SERVICIOS <span aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="#presupuesto">PEDIR PRESUPUESTO</a>
+        </div>
+      </div>
+      <p class="hero-spec"><b>0,5 — 6,35 mm</b><span>ESPESORES DE CHAPA</span></p>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>CORTE</span><i>•</i><span>PLEGADO</span><i>•</i><span>CILINDRADO</span><i>•</i><span>PUNZONADO</span><i>•</i><span>TRABAJOS A MEDIDA</span><i>•</i>
+        <span>CORTE</span><i>•</i><span>PLEGADO</span><i>•</i><span>CILINDRADO</span><i>•</i><span>PUNZONADO</span><i>•</i><span>TRABAJOS A MEDIDA</span><i>•</i>
+      </div>
+    </div>
+
+    <!-- 2. EMPRESA -->
+    <section id="empresa" class="section intro" aria-labelledby="empresa-title">
+      <div>
+        <p class="eyebrow">01 / EMPRESA</p>
+        <h2 id="empresa-title">DE LA CHAPA <br class="br-desk">A LA PIEZA <em>TERMINADA.</em></h2>
+      </div>
+      <div>
+        <p class="lead">DYD Plegados es una metalúrgica de José León Suárez, provincia de Buenos Aires, dedicada al trabajo de chapa.</p>
+        <p>Realizamos corte, plegado, cilindrado y punzonado, y fabricamos piezas, productos terminados y desarrollos especiales según lo que necesite cada cliente, sea particular o empresa.</p>
+        <ul class="facts">
+          <li><b>4</b><span>procesos de chapa</span></li>
+          <li><b>0,5–6,35</b><span>mm de espesor</span></li>
+          <li><b>A medida</b><span>piezas y productos</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3. SERVICIOS -->
+    <section id="servicios" class="section services" aria-labelledby="servicios-title">
+      <div class="section-head">
+        <p class="eyebrow">02 / SERVICIOS</p>
+        <h2 id="servicios-title">QUÉ HACEMOS</h2>
+        <p>Cuatro procesos para transformar chapa en la pieza que necesitás. Si no sabés cuál corresponde a tu trabajo, contanos qué querés lograr y te orientamos.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <span class="card-num">01</span>
+          <h3>CORTE</h3>
+          <p>Cortamos la chapa a la medida que necesitás, ya sea como pieza final o como primer paso para otro proceso.</p>
+          <a class="card-link" href="#presupuesto" data-wa="Hola DYD Plegados, quiero consultar por un trabajo de CORTE de chapa.">Consultar por corte <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="card">
+          <span class="card-num">02</span>
+          <h3>PLEGADO</h3>
+          <p>Doblamos la chapa en uno o varios ángulos para darle forma: perfiles, tapas, cajones o piezas según tu plano.</p>
+          <a class="card-link" href="#presupuesto" data-wa="Hola DYD Plegados, quiero consultar por un trabajo de PLEGADO de chapa.">Consultar por plegado <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="card">
+          <span class="card-num">03</span>
+          <h3>CILINDRADO</h3>
+          <p>Curvamos la chapa para obtener formas cilíndricas o arcos a partir de una chapa plana.</p>
+          <a class="card-link" href="#presupuesto" data-wa="Hola DYD Plegados, quiero consultar por un trabajo de CILINDRADO de chapa.">Consultar por cilindrado <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="card">
+          <span class="card-num">04</span>
+          <h3>PUNZONADO</h3>
+          <p>Perforamos la chapa con agujeros o formas, una solución práctica cuando se repite el mismo patrón en varias piezas.</p>
+          <a class="card-link" href="#presupuesto" data-wa="Hola DYD Plegados, quiero consultar por un trabajo de PUNZONADO de chapa.">Consultar por punzonado <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+      <p class="services-note">Trabajamos chapas de <b>0,5 a 6,35 mm</b> de espesor. Consultanos por el material y el espesor de tu trabajo.</p>
+    </section>
+
+    <!-- 4. FABRICACIONES A MEDIDA -->
+    <section id="fabricaciones" class="section fab" aria-labelledby="fab-title">
+      <div class="fab-copy">
+        <p class="eyebrow">03 / FABRICACIÓN A MEDIDA</p>
+        <h2 id="fab-title">PIEZAS, PRODUCTOS Y <em>DESARROLLOS.</em></h2>
+        <p>Además de los servicios de chapa, fabricamos productos terminados y piezas a partir de un plano, una muestra o una idea. Contanos qué necesitás y lo evaluamos juntos.</p>
+        <a class="btn btn-lime" href="#presupuesto">CONTANOS TU PROYECTO <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="fab-grid" id="fab-grid">
+        <noscript><p class="muted">Puertas metálicas · Parrillas y estructuras · Piezas y ejes · Desarrollos especiales. Precios: consultar.</p></noscript>
+      </div>
+    </section>
+
+    <!-- PROCESO -->
+    <section class="section steps" aria-labelledby="steps-title">
+      <div class="section-head">
+        <p class="eyebrow">04 / CÓMO TRABAJAMOS</p>
+        <h2 id="steps-title">PEDIR PRESUPUESTO <br class="br-desk">ES <em>SIMPLE.</em></h2>
+      </div>
+      <ol class="steps-list">
+        <li><b>01</b><h3>Contanos qué necesitás</h3><p>Completá el formulario o escribinos directo por WhatsApp.</p></li>
+        <li><b>02</b><h3>Enviá medidas o referencias</h3><p>Plano, croquis, foto o muestra: lo que tengas sirve para empezar.</p></li>
+        <li><b>03</b><h3>Cotizamos y coordinamos</h3><p>Te respondemos por WhatsApp con la cotización y coordinamos el trabajo.</p></li>
+      </ol>
+    </section>
+
+    <!-- 5. TRABAJOS REALIZADOS -->
+    <section id="trabajos" class="section works" aria-labelledby="trabajos-title">
+      <div class="section-head works-head">
+        <div>
+          <p class="eyebrow">05 / TRABAJOS REALIZADOS</p>
+          <h2 id="trabajos-title">HECHO EN <em>TALLER.</em></h2>
+        </div>
+        <a class="text-link" id="ig-link" href="https://www.instagram.com/dyd.plegados/" target="_blank" rel="noopener">Ver más en Instagram @dyd.plegados <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="gallery" id="gallery"></div>
+    </section>
+
+    <!-- 6. PRESUPUESTO / CONTACTO -->
+    <section id="presupuesto" class="section quote" aria-labelledby="quote-title">
+      <div class="quote-copy">
+        <p class="eyebrow">06 / PRESUPUESTO</p>
+        <h2 id="quote-title">¿TENÉS UN PLANO <br class="br-desk">O UNA <em>IDEA?</em></h2>
+        <p>Completá estos datos y armamos tu consulta para enviarla por WhatsApp. Vas a poder revisarla antes de mandarla.</p>
+        <p class="muted small">Si tenés planos, fotos o croquis, adjuntalos en el mismo chat de WhatsApp.</p>
+        <a class="btn btn-ghost wa-direct" href="#presupuesto" data-wa="Hola DYD Plegados, quiero hacer una consulta.">ESCRIBIR DIRECTO POR WHATSAPP</a>
+      </div>
+
+      <form class="quote-form" id="quote-form" novalidate>
+        <div class="field">
+          <label for="f-nombre">Nombre o empresa <abbr title="obligatorio">*</abbr></label>
+          <input id="f-nombre" name="nombre" type="text" autocomplete="name" required minlength="2" maxlength="80" aria-describedby="e-nombre">
+          <p class="error" id="e-nombre" aria-live="polite"></p>
+        </div>
+        <div class="field">
+          <label for="f-servicio">¿Qué necesitás? <abbr title="obligatorio">*</abbr></label>
+          <select id="f-servicio" name="servicio" required aria-describedby="e-servicio">
+            <option value="">Elegí una opción</option>
+            <option>Corte</option>
+            <option>Plegado</option>
+            <option>Cilindrado</option>
+            <option>Punzonado</option>
+            <option>Fabricación / desarrollo a medida</option>
+            <option>No estoy seguro / otro</option>
+          </select>
+          <p class="error" id="e-servicio" aria-live="polite"></p>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="f-material">Material <span class="opt">(opcional)</span></label>
+            <input id="f-material" name="material" type="text" maxlength="60" placeholder="Tipo de chapa">
+          </div>
+          <div class="field">
+            <label for="f-espesor">Espesor en mm <span class="opt">(opcional)</span></label>
+            <input id="f-espesor" name="espesor" type="text" inputmode="decimal" maxlength="12" placeholder="Ej.: 1,6" aria-describedby="e-espesor">
+            <p class="error" id="e-espesor" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="f-cantidad">Cantidad <span class="opt">(opcional)</span></label>
+            <input id="f-cantidad" name="cantidad" type="text" inputmode="numeric" maxlength="7" aria-describedby="e-cantidad">
+            <p class="error" id="e-cantidad" aria-live="polite"></p>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-detalle">Contanos el trabajo <abbr title="obligatorio">*</abbr></label>
+          <textarea id="f-detalle" name="detalle" rows="5" required minlength="15" maxlength="800" placeholder="Medidas, forma, uso de la pieza, plazos que manejás…" aria-describedby="e-detalle"></textarea>
+          <p class="error" id="e-detalle" aria-live="polite"></p>
+        </div>
+        <button class="btn btn-lime btn-submit" type="submit">PREPARAR CONSULTA EN WHATSAPP <span aria-hidden="true">→</span></button>
+        <div class="form-status" id="form-status" role="status" aria-live="polite" hidden></div>
+        <noscript><p class="muted small">Para usar el formulario necesitás JavaScript activado. También podés escribirnos por Instagram @dyd.plegados.</p></noscript>
+      </form>
+    </section>
+  </main>
+
+  <!-- 7. FOOTER -->
+  <footer class="site-footer" id="contacto">
+    <div class="footer-brand">
+      <a class="logo" href="#inicio" aria-label="DYD Plegados, volver al inicio"><b>DYD</b><span>PLEGADOS</span></a>
+      <p>Corte · Plegado · Cilindrado · Punzonado</p>
+    </div>
+    <ul class="footer-list" id="footer-contact">
+      <li data-loc>José León Suárez, Buenos Aires</li>
+    </ul>
+    <ul class="footer-list">
+      <li><a href="https://www.instagram.com/dyd.plegados/" target="_blank" rel="noopener" data-ig>Instagram @dyd.plegados</a></li>
+      <li><a href="#presupuesto">Pedir presupuesto</a></li>
+    </ul>
+    <p class="footer-copy">© <span id="year">2026</span> DYD Plegados</p>
+  </footer>
+
+  <a class="wa-float" href="#presupuesto" data-wa="Hola DYD Plegados, quiero hacer una consulta." aria-label="Consultar por WhatsApp">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.66 15l-1.3 4.77 4.9-1.28A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-2.9.76.78-2.83-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.25-.12-1.46-.72-1.69-.8-.22-.08-.39-.12-.55.12-.16.25-.63.8-.78.97-.14.16-.29.18-.53.06a6.7 6.7 0 0 1-3.32-2.9c-.25-.43.25-.4.72-1.33.08-.16.04-.3-.02-.42l-.75-1.82c-.2-.48-.4-.41-.55-.42h-.47a.9.9 0 0 0-.65.3 2.7 2.7 0 0 0-.85 2.02c0 1.19.87 2.34.99 2.5.12.16 1.7 2.6 4.13 3.65 1.53.66 2.13.72 2.9.6.47-.07 1.45-.59 1.65-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.47-.28Z"/></svg>
+    <span>WhatsApp</span>
+  </a>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Foto ampliada">
+    <form method="dialog"><button class="lightbox-close" aria-label="Cerrar">✕</button></form>
+    <img id="lightbox-img" alt="">
+    <p id="lightbox-cap"></p>
+  </dialog>
+</body>
+</html>
